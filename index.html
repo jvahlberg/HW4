@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flash Card App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <fieldset id="options-container" class="options">
+            <legend class="opt-legend"><strong>Options:</strong></legend>
+            <div id="options-checks" class="opt-grid">
+                <div>
+                    <label for="shuffle-check">Shuffle Cards:</label>
+                    <input type="checkbox" id="shuffle-check" checked>
+                </div>
+                <div>
+                    <label for="timed-check">Timed Session:</label>
+                    <input type="checkbox" id="timed-check">
+                </div>
+                <div>
+                    <label for="remove-check">Remove Correct from Deck:</label>
+                    <input type="checkbox" id="remove-check">
+                </div>
+            </div>
+        </fieldset>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="back-btn" class="back-btn btn hide">Back</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+        <div id="time-container" class="time-display hide">
+            <p id="time-text" class="blink">
+                <label id="minutes">00</label>m &nbsp;<label id="seconds">00</label>s
+            </p>
+
+        </div>
+        
+    </div>
+    <img src="holy grail.jpg" alt="Goblet" class="grail">
+</body>
+
+</html>
